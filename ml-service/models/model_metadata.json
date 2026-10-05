@@ -1,0 +1,96 @@
+{
+  "model_type": "Baseline_LogisticRegression",
+  "model_version": "1.0.0-demo",
+  "training_timestamp": "2026-10-05T11:16:00.543160Z",
+  "dataset_type": "SYNTHETIC_DEMO_DATASET",
+  "prediction_window": "7-14 days",
+  "metrics": {
+    "model_name": "Baseline_LogisticRegression",
+    "accuracy": 0.9833,
+    "precision": 0.9527,
+    "recall": 1.0,
+    "f1_score": 0.9758,
+    "roc_auc": 0.9999,
+    "pr_auc": 0.9998,
+    "confusion_matrix": {
+      "true_negatives": 272,
+      "false_positives": 7,
+      "false_negatives": 0,
+      "true_positives": 141
+    },
+    "evaluation_type": "DEMO_SYNTHETIC_EVALUATION"
+  },
+  "all_model_evaluations": {
+    "Baseline_LogisticRegression": {
+      "model_name": "Baseline_LogisticRegression",
+      "accuracy": 0.9833,
+      "precision": 0.9527,
+      "recall": 1.0,
+      "f1_score": 0.9758,
+      "roc_auc": 0.9999,
+      "pr_auc": 0.9998,
+      "confusion_matrix": {
+        "true_negatives": 272,
+        "false_positives": 7,
+        "false_negatives": 0,
+        "true_positives": 141
+      },
+      "evaluation_type": "DEMO_SYNTHETIC_EVALUATION"
+    },
+    "GradientBoosting": {
+      "model_name": "GradientBoosting",
+      "accuracy": 0.9833,
+      "precision": 0.9855,
+      "recall": 0.9645,
+      "f1_score": 0.9749,
+      "roc_auc": 0.9995,
+      "pr_auc": 0.999,
+      "confusion_matrix": {
+        "true_negatives": 277,
+        "false_positives": 2,
+        "false_negatives": 5,
+        "true_positives": 136
+      },
+      "evaluation_type": "DEMO_SYNTHETIC_EVALUATION"
+    }
+  },
+  "feature_names": [
+    "age",
+    "lactation_number",
+    "previous_mastitis",
+    "milk_yield",
+    "somatic_cell_count",
+    "milk_temperature",
+    "milk_conductivity",
+    "milk_ph",
+    "body_temperature",
+    "activity_level",
+    "rumination",
+    "feeding_behavior",
+    "environmental_temperature",
+    "humidity",
+    "farm_hygiene_score",
+    "housing_condition_score",
+    "milking_frequency",
+    "scc_3d_avg",
+    "scc_7d_avg",
+    "scc_change_pct",
+    "milk_yield_3d_avg",
+    "milk_yield_7d_avg",
+    "milk_yield_change_pct",
+    "rumination_change_pct",
+    "activity_change_pct",
+    "temperature_trend",
+    "conductivity_trend",
+    "breed_Ayrshire",
+    "breed_Guernsey",
+    "breed_Holstein-Friesian",
+    "breed_Jersey",
+    "vaccination_status_EXPIRED",
+    "vaccination_status_PENDING",
+    "vaccination_status_UP_TO_DATE"
+  ],
+  "train_samples": 1380,
+  "test_samples": 420,
+  "split_strategy": "Time-aware split at 2026-09-23"
+}

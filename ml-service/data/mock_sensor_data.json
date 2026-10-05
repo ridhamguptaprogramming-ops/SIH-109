@@ -1,0 +1,61 @@
+{
+  "animal_id": "C102",
+  "timestamp": "2026-10-05T12:00:00Z",
+  "age": 4.5,
+  "breed": "Holstein-Friesian",
+  "lactation_number": 2,
+  "previous_mastitis": 1,
+  "vaccination_status": "UP_TO_DATE",
+  "milk_yield": 21.2,
+  "somatic_cell_count": 520.0,
+  "milk_temperature": 39.4,
+  "milk_conductivity": 7.1,
+  "milk_ph": 6.9,
+  "body_temperature": 39.3,
+  "activity_level": 390.0,
+  "rumination": 280.0,
+  "feeding_behavior": 190.0,
+  "environmental_temperature": 29.0,
+  "humidity": 68.0,
+  "farm_hygiene_score": 6.5,
+  "housing_condition_score": 7.5,
+  "milking_frequency": 2,
+  "historical_readings": [
+    {
+      "timestamp": "2026-10-01T12:00:00Z",
+      "somatic_cell_count": 180.0,
+      "milk_yield": 29.0,
+      "body_temperature": 38.4,
+      "milk_conductivity": 5.2,
+      "activity_level": 580.0,
+      "rumination": 480.0
+    },
+    {
+      "timestamp": "2026-10-02T12:00:00Z",
+      "somatic_cell_count": 210.0,
+      "milk_yield": 28.5,
+      "body_temperature": 38.5,
+      "milk_conductivity": 5.4,
+      "activity_level": 550.0,
+      "rumination": 460.0
+    },
+    {
+      "timestamp": "2026-10-03T12:00:00Z",
+      "somatic_cell_count": 310.0,
+      "milk_yield": 26.0,
+      "body_temperature": 38.7,
+      "milk_conductivity": 5.9,
+      "activity_level": 490.0,
+      "rumination": 410.0
+    },
+    {
+      "timestamp": "2026-10-04T12:00:00Z",
+      "somatic_cell_count": 420.0,
+      "milk_yield": 23.5,
+      "body_temperature": 39.0,
+      "milk_conductivity": 6.5,
+      "activity_level": 430.0,
+      "rumination": 340.0
+    }
+  ]
+}
