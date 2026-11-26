@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import { DashboardLayout } from './layouts/DashboardLayout'
 import { DashboardPage } from './pages/DashboardPage'
 import { AnimalsPage } from './pages/AnimalsPage'
@@ -10,20 +11,23 @@ import { NotFoundPage } from './pages/NotFoundPage'
 
 export function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<DashboardLayout />}>
-          <Route index element={<Navigate to="/dashboard" replace />} />
-          <Route path="dashboard" element={<DashboardPage />} />
-          <Route path="animals" element={<AnimalsPage />} />
-          <Route path="animals/:id" element={<AnimalDetailPage />} />
-          <Route path="alerts" element={<AlertsPage />} />
-          <Route path="analytics" element={<AnalyticsPage />} />
-          <Route path="live-monitoring" element={<LiveMonitoringPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<DashboardLayout />}>
+            <Route index element={<Navigate to="/dashboard" replace />} />
+            <Route path="dashboard" element={<DashboardPage />} />
+            <Route path="animals" element={<AnimalsPage />} />
+            <Route path="animals/:id" element={<AnimalDetailPage />} />
+            <Route path="alerts" element={<AlertsPage />} />
+            <Route path="analytics" element={<AnalyticsPage />} />
+            <Route path="live-monitoring" element={<LiveMonitoringPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+      <Analytics />
+    </>
   )
 }
 
